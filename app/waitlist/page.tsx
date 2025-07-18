@@ -26,7 +26,7 @@ export default function WaitlistPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            🎉 You're Almost In!
+            🎉 You are Almost In!
           </motion.h1>
 
           <p className="text-gray-700 text-lg mb-10">
@@ -41,7 +41,7 @@ export default function WaitlistPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4 }}
             >
-              ✅ You're on the list! We'll notify you as soon as we go live.
+              ✅ You're on the list! We will notify you as soon as we go live.
             </motion.div>
           ) : (
             <form
