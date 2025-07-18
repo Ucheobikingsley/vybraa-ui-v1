@@ -40,7 +40,7 @@ export default function WaitlistPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4 }}
             >
-              ✅ You're on the list! We will notify you as soon as we go live.
+              ✅ You are on the list! We will notify you as soon as we go live.
             </motion.div>
           ) : (
             <form
