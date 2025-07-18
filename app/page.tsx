@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Head from "next/head";
-
+import Link from "next/link";
 export default function Home() {
   return (
     <>
@@ -63,39 +63,45 @@ export default function Home() {
         </section>
 
         {/* Feature Highlights */}
-        <section className="py-20 px-6 md:px-12 bg-white text-center">
+        {/* Feature Highlights */}
+        <section className="py-24 px-6 md:px-12 bg-white text-center">
           <div className="max-w-5xl mx-auto">
             <motion.h2
-              className="text-3xl md:text-4xl font-bold mb-10"
+              className="text-4xl font-bold mb-14 text-gray-900"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              One Tap. One Moment. One Artist.
+              Why Vybraa?
             </motion.h2>
 
-            <div className="grid md:grid-cols-3 gap-8 text-left">
+            <div className="grid md:grid-cols-3 gap-10 text-left">
               {[
                 {
-                  title: "Personalized Video Shoutouts",
-                  desc: "Get custom messages from your favorite artists, made just for you.",
+                  title: "Personalized Shoutouts",
+                  desc: "Receive heartfelt videos from your favorite artists — birthdays, celebrations, or just because.",
+                  icon: "🎤",
                 },
                 {
-                  title: "Artist Collectibles",
-                  desc: "Own a piece of your favorite star’s legacy — from signed items to exclusive merch.",
+                  title: "Exclusive Collectibles",
+                  desc: "Own signed merchandise, personal belongings, and limited artist memorabilia.",
+                  icon: "🎁",
                 },
                 {
-                  title: "Private Performances",
-                  desc: "Experience intimate mini-shows or video calls with your idol.",
+                  title: "Private Access",
+                  desc: "Get live video calls, private mini-shows, or front-row VVIP concert experiences.",
+                  icon: "📞",
                 },
               ].map((item, idx) => (
                 <motion.div
                   key={idx}
-                  className="p-6 rounded-xl bg-gray-50 border hover:shadow-md transition-all duration-300"
+                  className="flex flex-col gap-4 p-6 border border-gray-200 rounded-2xl shadow-sm hover:shadow-md transition-all"
                   whileHover={{ scale: 1.03 }}
+                  transition={{ duration: 0.3 }}
                 >
-                  <h3 className="text-xl font-semibold mb-2 text-[#F7B708]">
+                  <div className="text-5xl">{item.icon}</div>
+                  <h3 className="text-xl font-semibold text-gray-900">
                     {item.title}
                   </h3>
                   <p className="text-gray-600">{item.desc}</p>
@@ -106,32 +112,51 @@ export default function Home() {
         </section>
 
         {/* Call to Action */}
-        <section className="bg-[#F7B708] text-center py-16">
-          <motion.h3
-            className="text-3xl font-bold text-gray-900 mb-4"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
-            Ready to turn admiration into connection?
-          </motion.h3>
-          <p className="text-gray-800 mb-8">
-            The Vybraa mobile experience is launching soon.
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a
-              href="#"
-              className="bg-black text-white py-3 px-6 rounded-lg font-semibold hover:scale-105 transition"
+        {/* Call to Action */}
+        <section className="bg-[#F7B708] text-gray-900 py-20 px-6 md:px-12">
+          <div className="max-w-4xl mx-auto text-center">
+            <motion.h3
+              className="text-4xl font-bold mb-4 leading-tight"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
             >
-              Join Waitlist
-            </a>
-            <a
-              href="#"
-              className="bg-white text-black border border-black py-3 px-6 rounded-lg font-semibold hover:scale-105 transition"
+              Don’t just stream — connect personally.
+            </motion.h3>
+
+            <motion.p
+              className="text-lg md:text-xl mb-10 text-gray-800"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2, duration: 0.6 }}
             >
-              Contact for Early Access
-            </a>
+              Vybraa lets you turn your admiration for artists into real,
+              unforgettable moments — live calls, collectibles, and more. Coming
+              soon to your phone.
+            </motion.p>
+
+            <motion.div
+              className="flex flex-col sm:flex-row justify-center gap-4"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4, duration: 0.5 }}
+            >
+              <a
+                href="/waitlist"
+                className="bg-black text-white py-3 px-6 rounded-lg font-semibold hover:scale-105 transition"
+              >
+                Join the Waitlist
+              </a>
+              <a
+                href="/waitlist"
+                className="bg-white text-black border border-black py-3 px-6 rounded-lg font-semibold hover:scale-105 transition"
+              >
+                Notify Me on Launch
+              </a>
+            </motion.div>
           </div>
         </section>
 
