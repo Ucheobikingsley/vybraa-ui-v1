@@ -3,6 +3,8 @@
 import { useState } from "react";
 import Head from "next/head";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function WaitlistPage() {
   const [submitted, setSubmitted] = useState(false);
@@ -17,7 +19,18 @@ export default function WaitlistPage() {
         />
       </Head>
 
-      <main className="min-h-screen bg-white text-gray-900 px-6 py-20 md:py-28 flex items-center justify-center">
+      <main className="min-h-screen bg-white text-gray-900 px-6 py-10 md:py-16 flex flex-col items-center">
+        <Link href="/" className="mb-8">
+          <Image
+            src="/jpeg/logo.jpeg"
+            alt="Vybraa Logo"
+            width={100}
+            height={100}
+            priority
+            className="mx-auto w-[100px] h-[100px] rounded-full"
+          />
+        </Link>
+
         <div className="max-w-lg w-full text-center">
           <motion.h1
             className="text-4xl font-extrabold mb-4"
