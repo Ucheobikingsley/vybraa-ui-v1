@@ -196,7 +196,7 @@ export default function Home() {
                 </div>
                 <h4 className="font-semibold text-[#2e022e] mb-2">Address</h4>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  06 Tawakalitu Olabisi Lane
+                  Tawakalitu Olabisi Lane
                   <br />
                   Lekki, Lagos
                   <br />
