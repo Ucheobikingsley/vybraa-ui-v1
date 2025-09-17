@@ -169,6 +169,72 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Contact Information */}
+        <section className="bg-gray-50 py-16 px-6 md:px-12">
+          <div className="max-w-4xl mx-auto text-center">
+            <motion.h3
+              className="text-3xl font-bold mb-8 text-[#2e022e]"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              Get in Touch
+            </motion.h3>
+
+            <motion.div
+              className="grid md:grid-cols-3 gap-8 text-center"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2, duration: 0.6 }}
+            >
+              {/* Address */}
+              <div className="flex flex-col items-center">
+                <div className="w-12 h-12 bg-[#F7B708] rounded-full flex items-center justify-center mb-4">
+                  <span className="text-2xl">📍</span>
+                </div>
+                <h4 className="font-semibold text-[#2e022e] mb-2">Address</h4>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  06 Tawakalitu Olabisi Lane
+                  <br />
+                  Lekki, Lagos
+                  <br />
+                  Nigeria
+                </p>
+              </div>
+
+              {/* Phone */}
+              <div className="flex flex-col items-center">
+                <div className="w-12 h-12 bg-[#F7B708] rounded-full flex items-center justify-center mb-4">
+                  <span className="text-2xl">📞</span>
+                </div>
+                <h4 className="font-semibold text-[#2e022e] mb-2">Phone</h4>
+                <a
+                  href="tel:+2349068018564"
+                  className="text-gray-600 text-sm hover:text-[#F7B708] transition-colors"
+                >
+                  +234 906 801 8564
+                </a>
+              </div>
+
+              {/* Email */}
+              <div className="flex flex-col items-center">
+                <div className="w-12 h-12 bg-[#F7B708] rounded-full flex items-center justify-center mb-4">
+                  <span className="text-2xl">✉️</span>
+                </div>
+                <h4 className="font-semibold text-[#2e022e] mb-2">Email</h4>
+                <a
+                  href="mailto:Vybraa01@gmail.com"
+                  className="text-gray-600 text-sm hover:text-[#F7B708] transition-colors"
+                >
+                  Vybraa01@gmail.com
+                </a>
+              </div>
+            </motion.div>
+          </div>
+        </section>
+
         {/* Footer */}
         <footer className="text-center py-6 text-sm text-gray-500 bg-white">
           &copy; {new Date().getFullYear()} Vybraa. Built for the heartbeat of
