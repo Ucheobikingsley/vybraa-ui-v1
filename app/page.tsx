@@ -2,12 +2,13 @@
 
 import { motion } from "framer-motion";
 import Head from "next/head";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Vybraa – Africa's First Fan-Commerce Engine</title>
+        <title>Vybraa – Africa&apos;s First Fan-Commerce Engine</title>
         <meta
           name="description"
           content="Connect directly with your favorite African artists through personalized videos, exclusive content, and unforgettable experiences. Book one-on-one moments that matter."
@@ -23,9 +24,11 @@ export default function Home() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <img
+              <Image
                 src="/jpeg/logo.jpeg"
                 alt="Vybraa Logo"
+                width={48}
+                height={48}
                 className="w-12 h-12 rounded-full"
               />
             </motion.div>
@@ -74,7 +77,7 @@ export default function Home() {
                 transition={{ duration: 0.7 }}
               >
                 <h1 className="text-4xl md:text-6xl font-extrabold mb-6 text-[#2e022e] leading-tight">
-                  Africa's First
+                  Africa&apos;s First
                   <span className="text-[#F7B708]"> Fan-Commerce</span>
                   Engine
                 </h1>
@@ -647,9 +650,12 @@ export default function Home() {
 
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-2">
-                        I'm interested in
+                        I&apos;m interested in
                       </label>
-                      <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F7B708] focus:border-transparent">
+                      <select
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F7B708] focus:border-transparent"
+                        aria-label="Select your area of interest"
+                      >
                         <option>Personalized Videos</option>
                         <option>Live Sessions</option>
                         <option>Exclusive Merchandise</option>
@@ -663,7 +669,7 @@ export default function Home() {
                   </div>
 
                   <p className="text-xs text-gray-500 text-center mt-4">
-                    We'll notify you as soon as Vybraa is available in your
+                    We&apos;ll notify you as soon as Vybraa is available in your
                     region.
                   </p>
                 </div>
@@ -689,8 +695,8 @@ export default function Home() {
                 Get in Touch
               </h3>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Have questions about Vybraa? We'd love to hear from you. Reach
-                out to us through any of these channels.
+                Have questions about Vybraa? We&apos;d love to hear from you.
+                Reach out to us through any of these channels.
               </p>
             </motion.div>
 
@@ -786,9 +792,9 @@ export default function Home() {
                 </h4>
                 <p className="text-gray-600 mb-6">
                   Are you an artist interested in joining Vybraa? Or do you have
-                  a business partnership opportunity? We'd love to discuss how
-                  we can work together to revolutionize fan-artist connections
-                  in Africa.
+                  a business partnership opportunity? We&apos;d love to discuss
+                  how we can work together to revolutionize fan-artist
+                  connections in Africa.
                 </p>
                 <a
                   href="mailto:Vybraa01@gmail.com?subject=Partnership Inquiry"
@@ -807,16 +813,18 @@ export default function Home() {
             <div className="grid md:grid-cols-4 gap-8 mb-8">
               <div>
                 <div className="flex items-center mb-4">
-                  <img
+                  <Image
                     src="/jpeg/logo.jpeg"
                     alt="Vybraa Logo"
+                    width={40}
+                    height={40}
                     className="w-10 h-10 rounded-full mr-3"
                   />
                   <span className="text-xl font-bold">Vybraa</span>
                 </div>
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  Africa's first fan-commerce engine connecting fans with their
-                  favorite artists through personalized experiences.
+                  Africa&apos;s first fan-commerce engine connecting fans with
+                  their favorite artists through personalized experiences.
                 </p>
               </div>
 
