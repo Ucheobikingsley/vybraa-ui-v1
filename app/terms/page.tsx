@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TermsPage() {
   return (
@@ -19,7 +20,7 @@ export default function TermsPage() {
         {/* Navigation */}
         <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
           <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-            <a
+            <Link
               href="/"
               className="flex items-center"
               title="Go to Vybraa Homepage"
@@ -31,32 +32,32 @@ export default function TermsPage() {
                 height={48}
                 className="w-12 h-12 rounded-full"
               />
-            </a>
+            </Link>
             <div className="hidden md:flex space-x-8">
-              <a
+              <Link
                 href="/#features"
                 className="text-gray-700 hover:text-[#F7B708] transition-colors"
               >
                 Features
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/#how-it-works"
                 className="text-gray-700 hover:text-[#F7B708] transition-colors"
               >
                 How It Works
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/#ui-preview"
                 className="text-gray-700 hover:text-[#F7B708] transition-colors"
               >
                 App Preview
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/#contact"
                 className="text-gray-700 hover:text-[#F7B708] transition-colors"
               >
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
         </nav>
@@ -86,11 +87,12 @@ export default function TermsPage() {
             >
               <div className="bg-gray-50 rounded-2xl p-8 mb-8">
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  Welcome to Vybraa. These Terms and Conditions ("Terms") govern
-                  your access to and use of Vybraa's website, mobile
-                  applications, and services (collectively, the "Platform"). By
-                  using Vybraa, you agree to these Terms. If you do not agree,
-                  you must not use the Platform.
+                  Welcome to Vybraa. These Terms and Conditions
+                  (&quot;Terms&quot;) govern your access to and use of
+                  Vybraa&apos;s website, mobile applications, and services
+                  (collectively, the &quot;Platform&quot;). By using Vybraa, you
+                  agree to these Terms. If you do not agree, you must not use
+                  the Platform.
                 </p>
               </div>
 
@@ -102,29 +104,29 @@ export default function TermsPage() {
                   </h2>
                   <ul className="space-y-2 text-gray-700">
                     <li>
-                      <strong>"Platform"</strong> – Vybraa's website, app, and
-                      related services.
+                      <strong>&quot;Platform&quot;</strong> – Vybraa&apos;s
+                      website, app, and related services.
                     </li>
                     <li>
-                      <strong>"User"</strong> – Any individual using the
-                      Platform (fans and artists).
+                      <strong>&quot;User&quot;</strong> – Any individual using
+                      the Platform (fans and artists).
                     </li>
                     <li>
-                      <strong>"Artist"</strong> – Verified creators providing
-                      content, interactions, or services on Vybraa.
+                      <strong>&quot;Artist&quot;</strong> – Verified creators
+                      providing content, interactions, or services on Vybraa.
                     </li>
                     <li>
-                      <strong>"Fan"</strong> – Users purchasing, booking, or
-                      interacting with Artists through the Platform.
+                      <strong>&quot;Fan&quot;</strong> – Users purchasing,
+                      booking, or interacting with Artists through the Platform.
                     </li>
                     <li>
-                      <strong>"Content"</strong> – All material uploaded,
-                      created, or shared on Vybraa, including videos, music,
-                      messages, and images.
+                      <strong>&quot;Content&quot;</strong> – All material
+                      uploaded, created, or shared on Vybraa, including videos,
+                      music, messages, and images.
                     </li>
                     <li>
-                      <strong>"Transaction"</strong> – Any payment made by Fans
-                      to Artists through Vybraa.
+                      <strong>&quot;Transaction&quot;</strong> – Any payment
+                      made by Fans to Artists through Vybraa.
                     </li>
                   </ul>
                 </div>
@@ -199,7 +201,7 @@ export default function TermsPage() {
                   </h2>
                   <ul className="space-y-2 text-gray-700">
                     <li>
-                      • All payments are processed through Vybraa's secure
+                      • All payments are processed through Vybraa&apos;s secure
                       payment system.
                     </li>
                     <li>
@@ -227,12 +229,12 @@ export default function TermsPage() {
                     <li>
                       • By uploading Content, Artists grant Vybraa a
                       non-exclusive, worldwide, royalty-free license to host,
-                      display, and promote it within the Platform and vybraa's
-                      social media platforms.
+                      display, and promote it within the Platform and
+                      vybraa&apos;s social media platforms.
                     </li>
                     <li>
                       • Fans are prohibited from redistributing, recording, or
-                      reselling Content without the Artist's consent.
+                      reselling Content without the Artist&apos;s consent.
                     </li>
                   </ul>
                 </div>
@@ -253,7 +255,7 @@ export default function TermsPage() {
                       or violates third-party rights.
                     </li>
                     <li>
-                      • Circumvent Vybraa's payment system by arranging
+                      • Circumvent Vybraa&apos;s payment system by arranging
                       off-platform transactions.
                     </li>
                   </ul>
@@ -287,15 +289,15 @@ export default function TermsPage() {
                   </h2>
                   <ul className="space-y-2 text-gray-700">
                     <li>
-                      • Fans must respect Artists' boundaries and privacy.
+                      • Fans must respect Artists&apos; boundaries and privacy.
                     </li>
                     <li>
                       • Fans cannot demand services that violate laws or
-                      Vybraa's community guidelines.
+                      Vybraa&apos;s community guidelines.
                     </li>
                     <li>
                       • Fans acknowledge that services are provided at the
-                      Artist's discretion.
+                      Artist&apos;s discretion.
                     </li>
                   </ul>
                 </div>
@@ -345,8 +347,8 @@ export default function TermsPage() {
                   </h2>
                   <ul className="space-y-2 text-gray-700">
                     <li>
-                      • Vybraa provides the Platform "as is" and makes no
-                      warranties regarding uninterrupted service, error-free
+                      • Vybraa provides the Platform &quot;as is&quot; and makes
+                      no warranties regarding uninterrupted service, error-free
                       performance, or specific outcomes.
                     </li>
                     <li>
@@ -367,9 +369,9 @@ export default function TermsPage() {
                       consequential damages arising from use of the Platform.
                     </li>
                     <li>
-                      • Vybraa's total liability to any User shall not exceed
-                      the total fees paid to Vybraa by that User in the past 6
-                      months.
+                      • Vybraa&apos;s total liability to any User shall not
+                      exceed the total fees paid to Vybraa by that User in the
+                      past 6 months.
                     </li>
                   </ul>
                 </div>
@@ -385,7 +387,7 @@ export default function TermsPage() {
                     damages, or expenses resulting from:
                   </p>
                   <ul className="space-y-2 text-gray-700">
-                    <li>• User's misuse of the Platform.</li>
+                    <li>• User&apos;s misuse of the Platform.</li>
                     <li>• Violation of these Terms.</li>
                     <li>• Infringement of third-party rights.</li>
                   </ul>
@@ -419,8 +421,8 @@ export default function TermsPage() {
                       • Payments are non-refundable once content is delivered.
                     </li>
                     <li>
-                      • Refunds may only be issued at Vybraa's discretion for
-                      failed or undelivered services.
+                      • Refunds may only be issued at Vybraa&apos;s discretion
+                      for failed or undelivered services.
                     </li>
                   </ul>
                 </div>
@@ -513,12 +515,12 @@ export default function TermsPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              <a
+              <Link
                 href="/"
                 className="inline-block bg-[#F7B708] text-black font-bold py-3 px-8 rounded-lg hover:bg-[#fce580] transition-colors shadow-lg hover:shadow-xl"
               >
                 Back to Home
-              </a>
+              </Link>
             </motion.div>
           </div>
         </section>
@@ -539,8 +541,8 @@ export default function TermsPage() {
                   <span className="text-xl font-bold">Vybraa</span>
                 </div>
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  Africa's first fan-commerce engine connecting fans with their
-                  favorite artists through personalized experiences.
+                  Africa&apos;s first fan-commerce engine connecting fans with
+                  their favorite artists through personalized experiences.
                 </p>
               </div>
 
@@ -548,36 +550,36 @@ export default function TermsPage() {
                 <h4 className="font-semibold mb-4">Features</h4>
                 <ul className="space-y-2 text-sm text-gray-300">
                   <li>
-                    <a
+                    <Link
                       href="/#features"
                       className="hover:text-[#F7B708] transition-colors"
                     >
                       Personalized Videos
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/#features"
                       className="hover:text-[#F7B708] transition-colors"
                     >
                       Live Sessions
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/#features"
                       className="hover:text-[#F7B708] transition-colors"
                     >
                       Exclusive Merchandise
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/#features"
                       className="hover:text-[#F7B708] transition-colors"
                     >
                       Behind-the-Scenes
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -586,36 +588,36 @@ export default function TermsPage() {
                 <h4 className="font-semibold mb-4">Company</h4>
                 <ul className="space-y-2 text-sm text-gray-300">
                   <li>
-                    <a
+                    <Link
                       href="/#how-it-works"
                       className="hover:text-[#F7B708] transition-colors"
                     >
                       How It Works
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/#ui-preview"
                       className="hover:text-[#F7B708] transition-colors"
                     >
                       App Preview
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/#contact"
                       className="hover:text-[#F7B708] transition-colors"
                     >
                       Contact Us
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/waitlist"
                       className="hover:text-[#F7B708] transition-colors"
                     >
                       Join Waitlist
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -624,20 +626,20 @@ export default function TermsPage() {
                 <h4 className="font-semibold mb-4">Legal</h4>
                 <ul className="space-y-2 text-sm text-gray-300">
                   <li>
-                    <a
+                    <Link
                       href="/terms"
                       className="hover:text-[#F7B708] transition-colors"
                     >
                       Terms & Conditions
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/privacy"
                       className="hover:text-[#F7B708] transition-colors"
                     >
                       Privacy Policy
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
