@@ -905,6 +905,28 @@ export default function Home() {
               </div>
 
               <div>
+                <h4 className="font-semibold mb-4">Legal</h4>
+                <ul className="space-y-2 text-sm text-gray-300">
+                  <li>
+                    <a
+                      href="/terms"
+                      className="hover:text-[#F7B708] transition-colors"
+                    >
+                      Terms & Conditions
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/privacy"
+                      className="hover:text-[#F7B708] transition-colors"
+                    >
+                      Privacy Policy
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
                 <h4 className="font-semibold mb-4">Contact Info</h4>
                 <div className="space-y-2 text-sm text-gray-300">
                   <p>06 Tawakalitu Olabisi Lane</p>
